@@ -3,7 +3,9 @@ import List.DoublyNode;
 import List.LinkedList;
 import List.Node;
 
-public class Problems10 {
+import java.sql.SQLOutput;
+
+public class Problems10_LinkedList {
 
     //Ex 30
     //Personal Notes: I forgot to set the tmp which makes me go into an infinte look; when
@@ -314,11 +316,199 @@ public class Problems10 {
         return sortedList;
     }
     //Ex19
+    Node lastOneWins(int k,LinkedList list){
+        Node current=list.getHead();
+        list.getTail().setNext(current);//list is circular
+        while (list.getHead()!=list.getHead().getNext()){//last element left
 
+            for (int i=1;i<k;i++){//go to kth element
+                current=current.getNext();
+            }
+            if(current.getNext()==list.getHead()){
+                list.setHead(list.getHead().getNext());
+            }
 
+            current.setNext(current.getNext().getNext());
+            current=current.getNext();
+        }
 
+        return current;
+    }
 
-    
+    //Ex18
+    LinkedList primeDivisors(int N){
+        LinkedList tmplist=new LinkedList();
+        if(N<2){return tmplist;}
+        else {
+            tmplist.setHead(new Node(2));
+            tmplist.setTail(tmplist.getHead());
+        }
+
+        int count=3;
+        while (count<=N){
+            boolean isPrime=true;
+            for (int i=2;i<count;i++){
+                if(count%i==0){
+                  isPrime=false;
+                  break;
+                }
+            }
+            if(isPrime){
+                tmplist.getHead().setNext(new Node(count));
+                tmplist.setTail(tmplist.getHead());
+            }
+            count++;
+        }
+        LinkedList result=new LinkedList();
+        Node p=tmplist.getHead();
+        boolean calculationEndIndicator=false;
+
+        while(N!=0 && N!=1){
+            Node p2=tmplist.getHead();
+            while(p2!=null){
+                if(N%p2.getData()==0){
+                    N=N/p2.getData();
+                    if(result.getHead()==null){
+                        result.setHead(new Node(p2.getData()));
+                        result.setTail(result.getHead());
+                    }
+                    else{
+                        result.getTail().setNext(new Node(p2.getData()));
+                        result.setTail(result.getTail().getNext());
+                    }
+
+                }
+
+            }
+        }
+        return result;
+    }
+
+//EX17
+    boolean containsOnlyDuplicates(LinkedList list){
+        Node current=list.getHead();
+
+        while(current!=null){
+            int count=0;
+            Node p=list.getHead();
+            while(p!=null){
+                if(p!=current){
+                    if(p.getData()==current.getData()){
+                        count++;
+                    }
+                }
+                p=p.getNext();
+            }
+            if(count!=1){
+                return false;
+            }
+            current=current.getNext();
+        }
+        return true;
+    }
+
+    //Ex16
+    DoublyLinkedList getEvenOnes(DoublyLinkedList list){
+     DoublyLinkedList resultList=new DoublyLinkedList();
+     int index=1;
+     DoublyNode current=list.getHead();
+     while(current!=null){
+         if(index%2==0){
+             DoublyNode newNode=new DoublyNode(current.getData());
+             if(resultList.getHead()==null){//empty list case
+                 resultList.setHead(newNode);
+             }
+             else{//insert to the end list case
+                 resultList.getTail().setNext(newNode);
+                 newNode.setPrevious(resultList.getTail());
+             }
+             resultList.setTail(newNode);
+         }
+         index++;
+         current=current.getNext();
+     }
+     return resultList;
+    }
+    //Ex 15
+    void  SieveofEratosthenes (int N){
+        LinkedList list=new LinkedList();
+
+        for (int i=2; i<N;i++){
+            Node newNode=new Node(i);
+            if(list.getHead()==null){
+               list.setHead(newNode);
+            }
+            else{
+               list.getTail().setNext(newNode);
+            }
+            list.setTail(newNode);
+        }
+        Node p1=list.getHead();
+
+        while (p1!=null){
+            Node current=p1.getNext();
+            Node prv = p1;
+            System.out.println(current.getData());
+            while (current!=null){
+                if(p1.getData()%current.getData()==0){
+                    prv.setNext(current.getNext());
+                    if(current==list.getTail()){list.setTail(prv);}//removed tail so reset
+                }
+                else {prv=current;}
+                current=current.getNext();
+            }
+            p1=p1.getNext();
+        }
+    }
+
+    //Ex14
+    void deleteBetween(int p, int q,LinkedList list){
+        int index=0;
+        Node current=list.getHead();
+        Node prv=null;
+        Node p1=null;
+        Node p2=null;
+        while(current!=null){
+           if(index==p){ p1=prv;}
+           if(index==q){ p2=current.getNext();}
+            prv=current;
+            current=current.getNext();
+        }
+        if(p1==null){list.setHead(p2);}
+        else if (p2==null){list.setTail(p1);}
+        else{p1.setNext(p2);}
+
+    }
+
+    //Ex13
+    void deletePrimes(LinkedList list){
+        Node current=list.getHead();
+        Node prv=null;
+        while(current!=null){
+            boolean isPrime=true;
+            for (int i=2 ; i<current.getData(); i++){
+                if(current.getData()%i==0){isPrime=false;break;}
+            }
+            if(isPrime){
+                if(prv==null){
+                    list.setHead(current.getNext());
+                }
+                else if (current.getNext()==null){
+                    list.setTail(prv);
+                    prv.setNext(null);
+                    break;
+                }
+                else{
+                    prv.setNext(current.getNext());
+                    current=current.getNext();
+                    continue;
+                }
+
+            }
+            prv=current;
+            current=current.getNext();
+        }
+    }
 // EX8
 // static LinkedList oddIndexedElements(LinkedList){
 //     return

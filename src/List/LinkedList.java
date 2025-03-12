@@ -1,5 +1,7 @@
 package List;
 
+import java.time.temporal.ChronoUnit;
+
 public class LinkedList {
 
     protected Node head;
@@ -10,19 +12,25 @@ public class LinkedList {
         tail = null;
     }
 
-    public boolean isEmpty(){
+    public boolean isEmpty() {
         return head == null;
     }
 
-    public Node getHead(){
+    public Node getHead() {
         return head;
     }
-    public Node getTail(){return tail;}
+
+    public Node getTail() {
+        return tail;
+    }
 
     public void setHead(Node head) {
         this.head = head;
     }
-    public void setTail(Node tail) { this.tail = tail; }
+
+    public void setTail(Node tail) {
+        this.tail = tail;
+    }
 
     public void insertFirst(Node newNode) {
         if (isEmpty()) {
@@ -42,14 +50,15 @@ public class LinkedList {
         }
         return null;
     }
-    public void deleteFirst(){
+
+    public void deleteFirst() {
         head = head.getNext();
-        if (isEmpty()){
+        if (isEmpty()) {
             tail = null;
         }
     }
-    
-    public String toString(){
+
+    public String toString() {
         StringBuilder result = new StringBuilder();
         Node tmp = head;
         while (tmp != null) {
@@ -58,4 +67,9 @@ public class LinkedList {
         }
         return result.toString();
     }
+
 }
+
+
+
+
