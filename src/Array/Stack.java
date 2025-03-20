@@ -39,6 +39,50 @@ public class Stack {
         }
         return null;
     }
+    //Ex 13
+    void removeOddIndexed(){
+        Stack stack = new Stack(9999);
+        int index= 1;
+        while(!isEmpty()){
+            stack.push(pop());
+        }
+        while(!stack.isEmpty()){
+            if(index%2==0){
+                stack.pop();
+            }
+            else{push(stack.pop());}
+            index++;
+        }
+    }
+
+    //Ex14
+    Element pop(int k){
+        int popIndex = top-k+1;
+        Element poped = array[popIndex];
+        //remove above elements
+        for(int i = popIndex;i<top;i++){
+            array[i] = array[i+1];
+        }
+        top--;
+        return poped;
+    }
+    //Ex15
+    void compress(){
+        Stack stack = new Stack(N);
+        int prevPoped=pop().getData();
+        stack.push(new Element(prevPoped));
+        while (!isEmpty()){
+            Element poped = pop();
+            if(prevPoped!=poped.getData()){
+                stack.push(poped);
+            }
+
+            prevPoped=poped.getData();
+        }
+        while (!stack.isEmpty()){
+            push(stack.pop());
+        }
+    }
     //Ex16
     void push (int k, int data){
 

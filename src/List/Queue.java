@@ -33,4 +33,8 @@ public class Queue {
         }
         return result;
     }
+    void removeAll(Queue[] list){
+        Node current = first;
+
+    }
 }
