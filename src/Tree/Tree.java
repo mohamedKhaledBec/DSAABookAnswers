@@ -48,4 +48,11 @@ public class Tree {
         }
     }
 
+
+    //Q25
+    boolean inMirror (TreeNode left, TreeNode right){
+
+        return true;
+    }
+
 }
