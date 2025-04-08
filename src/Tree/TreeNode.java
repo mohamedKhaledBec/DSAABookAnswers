@@ -1,5 +1,8 @@
 package Tree;
 
+import List.LinkedList;
+import List.Node;
+
 public class TreeNode {
 
     protected TreeNode left;
@@ -44,5 +47,76 @@ public class TreeNode {
             right.prettyPrint(level + 1);
         }
     }
+    //Q17
+    void accumulateLeafNodes(Queue queue){
+        if(left != null){
+            left.accumulateLeafNodes(queue);
+        }
+        if(left == null && right == null){// NOTE: this is the inorder traversing. Here you need to check if it is a leaf before adding. Allways add the logic here for inorder
+            queue.enqueue(new Element(this));
+        }
 
+        if(right != null){
+            right.accumulateLeafNodes(queue);
+        }
+    }
+    //Q9
+    int HigherThanX (int x){//*
+        int count = 0;
+        //first i check if i have to check on both sides or right only is enough by the outer if cases
+        if (data>x){//both
+            count=1;
+            if(left != null){
+                count += left.HigherThanX(x);
+            }
+            if(right != null){
+                count += right.HigherThanX(x);
+            }
+
+        }
+        else{//only right side search
+            if(right!=null){
+                count += right.HigherThanX(x);
+            }
+        }
+        return count;
+    }
+    //Q20
+    int sumOfNodesBetween (int p , int q){
+        int sum=0;
+        if(data<p){
+            if(right != null){
+                sum = sumOfNodesBetween(p, q);
+            }
+        }
+        else if (data>q){
+            if(left != null){
+                sum = sumOfNodesBetween(p, q);
+            }
+        }
+        else if(data<q && data>p){
+            sum=data;//Don't forget to assign The counter or product or sum here.
+            if(left != null){
+                sum+=left.sumOfNodesBetween(p, q);
+            }
+            if(right != null){
+                sum+=right.sumOfNodesBetween(p, q);
+            }
+        }
+        return sum;
+    }
+    //Q13
+    void pathList (LinkedList l){
+        l.insertFirst(new Node(data));
+        if (data % 2 == 0) {
+            if ( right != null ) {
+                right.pathList(l);
+            }
+        }
+        else {
+            if ( left != null ) {
+                left.pathList(l);
+            }
+        }
+    }
 }

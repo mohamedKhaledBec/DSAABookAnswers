@@ -1,5 +1,7 @@
 package Tree;
 
+import List.Node;
+
 public class Tree {
 
     protected TreeNode root;
@@ -50,9 +52,38 @@ public class Tree {
 
 
     //Q25
-    boolean inMirror (TreeNode left, TreeNode right){
-
-        return true;
+    boolean isMirror (TreeNode left, TreeNode right) {
+        if (left == null && right == null) {
+            return true;
+        }
+        if (left == null || right == null) {
+            return false;
+        }
+        boolean ismirrored = (left.data == right.data) & (isMirror(left.left, right.right)) & (isMirror(left.right, right.left));
+        return ismirrored;
     }
+    //Q24
+    int product() {
+
+            TreeNode tmp;
+            int Product = 1;
+            Stack c = new Stack(100);
+            if (root != null){
+                c.push(new Element(root));
+            }
+            while (!c.isEmpty()){
+                Element e = c.pop();
+                tmp = e.getData();
+                Product *= tmp.data;
+                if (tmp.getLeft() != null){
+                    c.push(new Element(tmp.getLeft()));
+                }
+                if (tmp.getRight() != null){
+                    c.push(new Element(tmp.getRight()));
+                }
+            }
+            return Product;
+    }
+
 
 }
