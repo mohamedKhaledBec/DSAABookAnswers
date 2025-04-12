@@ -40,5 +40,26 @@ public class Hash {
         }
         table[address] = new Element(value);
     }
-
+    //Q5
+    public boolean anyDuplicates(int[] array){
+        for (int i:array){
+            if(this.search(i)!=null){
+                return true;
+            }
+            this.insert(i);
+        }
+        return false;
+    }
+    //Q6
+    public Hash simplify(){
+        Hash result=new Hash(N);
+        for (int i = 0; i < N; i++){
+            if(table[i] != null && !deleted[i]){// if it exsits in table and not duplicate
+                if (result.search(table[i].getData())==null){
+                    result.insert(table[i].getData());
+                }
+            }
+        }
+        return result;
+    }
 }

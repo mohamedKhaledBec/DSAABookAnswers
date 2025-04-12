@@ -119,4 +119,87 @@ public class TreeNode {
             }
         }
     }
+    //Q6
+    int numberOfNonLeafNodes(){
+        int count = 0;
+        if(left !=null || right!=null){
+            count=1;
+        }
+        if(right!=null){
+
+            count+=right.numberOfNonLeafNodes();
+        }
+        if(left!=null){
+
+            count+=left.numberOfNonLeafNodes();
+        }
+        return count;
+    }
+    //Q1
+    int leftistOrRightist(){
+        int count=0;
+
+        if(right!=null&&left==null){
+            count--;
+        }
+        if(left!=null&&right==null){
+            count++;
+        }
+        if(left!=null){
+            count+=left.leftistOrRightist();
+        }
+        if(right!=null){
+            count+=right.left.numberOfNonLeafNodes();
+        }
+        return count;
+    }
+
+    //Q2
+    int numberOfMeanNodes(){
+        int count = 0;
+        if(right!=null&&left!=null){
+            if(data==(int)(right.data+left.data)/2){
+                count=1;
+            }
+        }
+        if(right!=null){
+            count+=right.numberOfMeanNodes();
+        }
+        if(left!=null){
+            count+=left.numberOfMeanNodes();
+        }
+        return count;
+    }
+    //Q3
+    int numberofLonelyNodes(){
+        int count = 0;
+        if(right!=null){
+            count+=right.numberofLonelyNodes();
+        }
+        if(left!=null){
+            count+=left.numberofLonelyNodes();
+        }
+        if(right!=null&&left==null){
+            count++;
+        }
+        if(left!=null&&right==null){
+            count++;
+        }
+        return count;
+    }
+    //Q4
+    int numberOfFullNodes(){
+        int count = 0;
+        if(right!=null){
+            count+=right.numberOfFullNodes();
+        }
+        if(left!=null){
+            count+=left.numberOfFullNodes();
+        }
+        if(right!=null&&left!=null){
+            count++;
+        }
+
+        return count;
+    }
 }
