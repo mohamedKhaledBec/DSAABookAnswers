@@ -75,4 +75,30 @@ public class Hash {
         }
         return result;
     }
+    //Q2
+    int numberOfEmptySlots(){
+        int count = 0;
+        for (int i = 0; i < N; i++) {
+            if (table[i]==null) {count++;}
+        }
+        return count;
+    }
+    //Q3
+    void delete(int X){
+        int address = hashFunction(X);
+        Node current = table[address].getHead();
+        Node prev = null;
+        while (current!=null){
+            if(current.data==X){
+                if(prev==null){table[address].head=current.next;}
+                else{prev.next=current.next;}
+                current=current.getNext();
+            }
+            else{
+                prev = current;
+                current = current.getNext();
+            }
+        }
+    }
+
 }

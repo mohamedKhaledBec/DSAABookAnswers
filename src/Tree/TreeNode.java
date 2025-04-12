@@ -202,4 +202,52 @@ public class TreeNode {
 
         return count;
     }
+    //Q7
+    int numberOfleaveNodes(){
+        int count = 0;
+        if(right!=null){
+            count+=right.numberOfleaveNodes();
+        }
+        if(left!=null){
+            count+=left.numberOfleaveNodes();
+        }
+        if(right==null&&left==null){
+            count++;
+        }
+        return count;
+    }
+    //Q8
+    int sumofLeaves(){
+        int sum=0;
+        if(left!=null){
+            sum+=left.sumofLeaves();
+        }
+        if(right!=null){
+            sum+=right.sumofLeaves();
+        }
+        if(left==null&&right==null){
+            sum+=data;
+        }
+        return sum;
+    }
+    //Q9
+    int higherThanX(int x){
+        int count =0;
+        if(data>x){
+            count=1;
+            if(left != null){
+                count += left.HigherThanX(x);
+            }
+            if(right != null){
+                count += right.HigherThanX(x);
+            }
+        }
+        else{
+            if(right!=null){
+                count += right.HigherThanX(x);
+            }
+        }
+
+        return count;
+    }
 }
