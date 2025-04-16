@@ -33,9 +33,7 @@ public class Queue {
         }
         return result;
     }
-    void removeAll(Queue[] list){
-        Node current = first;
-    }
+
     //Q1
     void insertAfterKth (int k,Node newNode){
         Node position = first;
@@ -174,17 +172,23 @@ public class Queue {
                 Node tmp = this.first;
                 Node prv = null;
                 while (tmp != null) {
-                    if (prv == null) {
-                        // Removing the first node
-                        this.first = this.first.next;
-                        if (this.first == null) {
-                            this.last = null; //empty queue
+                    if (current.data == tmp.data) {
+                        if (prv == null) {
+                            // Removing the first node
+                            this.first = this.first.next;
+                            if (this.first == null) {
+                                this.last = null; //empty queue
+                            }
+                        } else {
+                            prv.next = tmp.next;
+                            if (tmp.next == null) {
+                                this.last = prv; //last element requires last update
+                            }
                         }
-                    } else {
-                        prv.next = tmp.next;
-                        if (tmp.next == null) {
-                            this.last = prv; //last element
-                        }
+
+                    }
+                    else{
+                        prv = tmp;
                     }
                     tmp = tmp.next;
                 }

@@ -1,5 +1,7 @@
 package Array;
 
+import List.Node;
+
 public class Queue {
 
     private Element array[];
@@ -9,6 +11,7 @@ public class Queue {
     private int last;
 
     private int N;
+    private int srcSize;
 
     public Queue(int N){
         this.N = N;
@@ -97,12 +100,64 @@ public class Queue {
             if(array[tmp].getData()>max){max=array[tmp].getData();maxIndex=tmp;}
         }
         int tmpIndex=(last+1)%N;
-        while (tmpIndex != maxIndex){
+        while (tmpIndex != (maxIndex+1)%N){
             int prev=tmpIndex;
             tmpIndex=(tmpIndex-1+N)%N;
             array[prev]=array[tmpIndex];
         }
-        array[maxIndex]=new Element(data);
+        array[(maxIndex+1)%N]=new Element(data);
         last=(last+1)%N;
      }
+    //Q6
+    Queue devideQueue(){
+        Queue result = new Queue(N);
+        int position = first;
+        while (position != last){
+            if(position%2==0){
+                //enqueue to result
+                Element element=new Element(this.array[position].getData());
+                result.array[result.last] = element;
+                result.last = (result.last + 1) % result.N;
+                //end of enqueueing
+                // Start deleting
+                int tmp = position;
+                while (tmp != last){
+                    this.array[tmp]=this.array[(tmp+1)%N];
+                    tmp=(tmp+1)%N;
+                }
+                this.last=(this.last-1+N)%N;
+                //End of deleting
+            }
+            position=(position+1)%N;
+        }
+        return result;
+    }
+    //Q8
+    Element dequeue(int k){
+        Element result= new Element(this.array[k].getData());
+        int index = (first+k-1)%N;//***//
+        for (int i = index; i!=last; i = (i + 1) % N){//***//
+            array[i]=array[(i + 1) % N];
+        }
+        last = (last -1+N)%N;
+        return result;
+    }
+    //Q9
+    void copyPaste(Queue src, int index){
+        int srcSize = 0;
+        for (int i = src.first; i != src.last; i = (i + 1) % src.N) {
+            srcSize++;
+        }
+
+        for (int j = (last - 1 + N) % N; j != (index - 1 + N) % N; j = (j - 1 + N) % N) {
+            array[(j + srcSize) % N] = array[j];
+        }
+
+        for (int k = 0; k < srcSize; k++) {
+            array[(index + k) % N] = new Element(src.array[(src.first + k) % src.N].getData());
+        }
+
+        last = (last + srcSize) % N;
+    }
+
 }
