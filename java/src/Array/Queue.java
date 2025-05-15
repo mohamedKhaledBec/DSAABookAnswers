@@ -159,5 +159,29 @@ public class Queue {
 
         last = (last + srcSize) % N;
     }
-
+    void Queue(Queue[] list){//***
+        int size=0;
+        for (Queue q : list){
+            int qsize=(q.first-q.last)%q.N;
+            size+=qsize;
+        }
+        this.N=size+1;
+        this.array=new Element[size+1];
+        this.first = 0;
+        this.last=0;
+        int index=0;
+        boolean flag=true;
+        while (flag) {
+            flag=false;
+            for (Queue q : list) {
+                if(index<(q.last-q.first)%q.N){
+                    Element element = q.array[(q.first+index)%q.N];
+                    this.array[this.last]=new Element(element.getData());
+                    this.last++;
+                    flag=true;
+                }
+            }
+            index++;
+        }
+    }
 }

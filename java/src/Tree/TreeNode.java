@@ -88,13 +88,11 @@ public class TreeNode {
             if(right != null){
                 sum = sumOfNodesBetween(p, q);
             }
-        }
-        else if (data>q){
+        } else if (data>q){
             if(left != null){
                 sum = sumOfNodesBetween(p, q);
             }
-        }
-        else if(data<q && data>p){
+        } else if(data<q && data>p){
             sum=data;//Don't forget to assign The counter or product or sum here.
             if(left != null){
                 sum+=left.sumOfNodesBetween(p, q);
@@ -102,8 +100,7 @@ public class TreeNode {
             if(right != null){
                 sum+=right.sumOfNodesBetween(p, q);
             }
-        }
-        return sum;
+        }return sum;
     }
     //Q13
     void pathList (LinkedList l){

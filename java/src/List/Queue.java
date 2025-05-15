@@ -114,18 +114,18 @@ public class Queue {
         return result;
     }
     //Q10
-    void Queue(Queue[] list){
-        for (Queue queue : list) {
-            Node current = queue.first;
-            while (current != null) {
-                Node newNode = new Node (current.getData());
-                if(first==null)first=newNode;
-                else  last.setNext(newNode);
-                last=newNode;
-                current=current.next;
-            }
-        }
-    }
+//    void Queue(Queue[] list){
+//        for (Queue queue : list) {
+//            Node current = queue.first;
+//            while (current != null) {
+//                Node newNode = new Node (current.getData());
+//                if(first==null)first=newNode;
+//                else  last.setNext(newNode);
+//                last=newNode;
+//                current=current.next;
+//            }
+//        }
+//    }
 //Q11
     void cutPaste(Queue dest, int p , int q){
         Node current = first;
@@ -195,6 +195,31 @@ public class Queue {
                 last=prv;
                 current= current.next;
             }
+        }
+    }
+    void removeAllRetry(Queue[] list){
+        Node tmp = this.first;
+        Node prvTMP = null;
+        while(tmp!=null) {
+            boolean deleted = false;
+            for (Queue q : list) {
+                Node current = q.first;
+                while (current != null) {
+                    if (current.data == tmp.data) {
+                        deleted= !deleted;
+                        break;
+                    }
+                    current = current.next;
+                }
+                if(deleted)break;
+            }
+            if (deleted) {
+                if (prvTMP == null) {this.first = this.first.next;}
+                else prvTMP.next = tmp.next;
+
+            }
+            else prvTMP = tmp;
+            tmp = tmp.next;
         }
     }
 }

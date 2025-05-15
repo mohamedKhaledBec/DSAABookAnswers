@@ -84,6 +84,24 @@ public class Tree {
             }
             return Product;
     }
+    boolean isIdentical(TreeNode T1, TreeNode T2) {
+        if(T1 == null && T2 == null){return true;}
+        if(T1 == null || T2 == null){return false;}
+        if(T1.data!=T2.data){return false;}
+        return isIdentical(T1.left, T2.left) && isIdentical(T1.right, T2.right);
+    }
+    int product1(){
+        Stack stack = new Stack(100);
+        int product = 1;
+        stack.push(new Element(root));
+        while (!stack.isEmpty()) {
+            TreeNode e = stack.pop().getData();
+            product *= e.data;
+            if (e.right != null) stack.push(new Element(e.right));
+            if (e.left != null) stack.push(new Element(e.left));
 
+        }
+        return product;
+    }
 
 }
