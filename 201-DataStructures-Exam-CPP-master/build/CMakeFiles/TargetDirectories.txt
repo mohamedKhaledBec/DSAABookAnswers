@@ -1,0 +1,5 @@
+C:/Users/mokha/OneDrive/Documents/#University_Files/6th semester/CS201/201-DataStructures-Exam-CPP-master/build/CMakeFiles/Exam_CPP.dir
+C:/Users/mokha/OneDrive/Documents/#University_Files/6th semester/CS201/201-DataStructures-Exam-CPP-master/build/CMakeFiles/ExamTest1.dir
+C:/Users/mokha/OneDrive/Documents/#University_Files/6th semester/CS201/201-DataStructures-Exam-CPP-master/build/CMakeFiles/ExamTest2.dir
+C:/Users/mokha/OneDrive/Documents/#University_Files/6th semester/CS201/201-DataStructures-Exam-CPP-master/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/mokha/OneDrive/Documents/#University_Files/6th semester/CS201/201-DataStructures-Exam-CPP-master/build/CMakeFiles/ZERO_CHECK.dir

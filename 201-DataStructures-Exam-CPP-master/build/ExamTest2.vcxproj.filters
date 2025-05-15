@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\mokha\OneDrive\Documents\#University_Files\6th semester\CS201\201-DataStructures-Exam-CPP-master\src\Array\Graph\Graph.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\mokha\OneDrive\Documents\#University_Files\6th semester\CS201\201-DataStructures-Exam-CPP-master\src\General\AbstractGraph.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\mokha\OneDrive\Documents\#University_Files\6th semester\CS201\201-DataStructures-Exam-CPP-master\src\General\Path.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\mokha\OneDrive\Documents\#University_Files\6th semester\CS201\201-DataStructures-Exam-CPP-master\src\Array\DisjointSet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\mokha\OneDrive\Documents\#University_Files\6th semester\CS201\201-DataStructures-Exam-CPP-master\src\Array\Element.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\mokha\OneDrive\Documents\#University_Files\6th semester\CS201\201-DataStructures-Exam-CPP-master\src\Array\Hash.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\mokha\OneDrive\Documents\#University_Files\6th semester\CS201\201-DataStructures-Exam-CPP-master\src\Array\Queue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\mokha\OneDrive\Documents\#University_Files\6th semester\CS201\201-DataStructures-Exam-CPP-master\src\Array\Set.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\mokha\OneDrive\Documents\#University_Files\6th semester\CS201\201-DataStructures-Exam-CPP-master\src\Array\Stack.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\mokha\OneDrive\Documents\#University_Files\6th semester\CS201\201-DataStructures-Exam-CPP-master\src\Array\Heap\DHeap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\mokha\OneDrive\Documents\#University_Files\6th semester\CS201\201-DataStructures-Exam-CPP-master\src\Array\Heap\Heap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\mokha\OneDrive\Documents\#University_Files\6th semester\CS201\201-DataStructures-Exam-CPP-master\src\Array\Heap\HeapNode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\mokha\OneDrive\Documents\#University_Files\6th semester\CS201\201-DataStructures-Exam-CPP-master\src\Array\Heap\MaxDHeap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\mokha\OneDrive\Documents\#University_Files\6th semester\CS201\201-DataStructures-Exam-CPP-master\src\Array\Heap\MaxHeap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\mokha\OneDrive\Documents\#University_Files\6th semester\CS201\201-DataStructures-Exam-CPP-master\src\Array\Heap\MinDHeap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\mokha\OneDrive\Documents\#University_Files\6th semester\CS201\201-DataStructures-Exam-CPP-master\src\Array\Heap\MinHeap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\mokha\OneDrive\Documents\#University_Files\6th semester\CS201\201-DataStructures-Exam-CPP-master\src\Tree\Tree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\mokha\OneDrive\Documents\#University_Files\6th semester\CS201\201-DataStructures-Exam-CPP-master\src\Tree\TreeNode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\mokha\OneDrive\Documents\#University_Files\6th semester\CS201\201-DataStructures-Exam-CPP-master\src\List\Graph\Edge.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\mokha\OneDrive\Documents\#University_Files\6th semester\CS201\201-DataStructures-Exam-CPP-master\src\List\Graph\EdgeList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\mokha\OneDrive\Documents\#University_Files\6th semester\CS201\201-DataStructures-Exam-CPP-master\src\List\DoublyLinkedList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\mokha\OneDrive\Documents\#University_Files\6th semester\CS201\201-DataStructures-Exam-CPP-master\src\List\DoublyNode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\mokha\OneDrive\Documents\#University_Files\6th semester\CS201\201-DataStructures-Exam-CPP-master\src\List\Hash.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\mokha\OneDrive\Documents\#University_Files\6th semester\CS201\201-DataStructures-Exam-CPP-master\src\List\LinkedList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\mokha\OneDrive\Documents\#University_Files\6th semester\CS201\201-DataStructures-Exam-CPP-master\src\List\Node.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\mokha\OneDrive\Documents\#University_Files\6th semester\CS201\201-DataStructures-Exam-CPP-master\src\List\Queue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\mokha\OneDrive\Documents\#University_Files\6th semester\CS201\201-DataStructures-Exam-CPP-master\src\List\Stack.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\mokha\OneDrive\Documents\#University_Files\6th semester\CS201\201-DataStructures-Exam-CPP-master\src\Tree\Queue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\mokha\OneDrive\Documents\#University_Files\6th semester\CS201\201-DataStructures-Exam-CPP-master\src\Tree\Stack.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\mokha\OneDrive\Documents\#University_Files\6th semester\CS201\201-DataStructures-Exam-CPP-master\src\Tree\Element.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\mokha\OneDrive\Documents\#University_Files\6th semester\CS201\201-DataStructures-Exam-CPP-master\src\ExamTest2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\mokha\OneDrive\Documents\#University_Files\6th semester\CS201\201-DataStructures-Exam-CPP-master\src\List\Graph\Graph.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\mokha\OneDrive\Documents\#University_Files\6th semester\CS201\201-DataStructures-Exam-CPP-master\src\Array\Graph\Graph.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\mokha\OneDrive\Documents\#University_Files\6th semester\CS201\201-DataStructures-Exam-CPP-master\src\General\Path.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\mokha\OneDrive\Documents\#University_Files\6th semester\CS201\201-DataStructures-Exam-CPP-master\src\Array\DisjointSet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\mokha\OneDrive\Documents\#University_Files\6th semester\CS201\201-DataStructures-Exam-CPP-master\src\Array\Element.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\mokha\OneDrive\Documents\#University_Files\6th semester\CS201\201-DataStructures-Exam-CPP-master\src\Array\Hash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\mokha\OneDrive\Documents\#University_Files\6th semester\CS201\201-DataStructures-Exam-CPP-master\src\Array\Queue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\mokha\OneDrive\Documents\#University_Files\6th semester\CS201\201-DataStructures-Exam-CPP-master\src\Array\Set.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\mokha\OneDrive\Documents\#University_Files\6th semester\CS201\201-DataStructures-Exam-CPP-master\src\Array\Stack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\mokha\OneDrive\Documents\#University_Files\6th semester\CS201\201-DataStructures-Exam-CPP-master\src\Array\Heap\DHeap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\mokha\OneDrive\Documents\#University_Files\6th semester\CS201\201-DataStructures-Exam-CPP-master\src\Array\Heap\Heap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\mokha\OneDrive\Documents\#University_Files\6th semester\CS201\201-DataStructures-Exam-CPP-master\src\Array\Heap\HeapNode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\mokha\OneDrive\Documents\#University_Files\6th semester\CS201\201-DataStructures-Exam-CPP-master\src\Array\Heap\MaxDHeap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\mokha\OneDrive\Documents\#University_Files\6th semester\CS201\201-DataStructures-Exam-CPP-master\src\Array\Heap\MaxHeap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\mokha\OneDrive\Documents\#University_Files\6th semester\CS201\201-DataStructures-Exam-CPP-master\src\Array\Heap\MinDHeap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\mokha\OneDrive\Documents\#University_Files\6th semester\CS201\201-DataStructures-Exam-CPP-master\src\Array\Heap\MinHeap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\mokha\OneDrive\Documents\#University_Files\6th semester\CS201\201-DataStructures-Exam-CPP-master\src\Tree\Tree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\mokha\OneDrive\Documents\#University_Files\6th semester\CS201\201-DataStructures-Exam-CPP-master\src\Tree\TreeNode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\mokha\OneDrive\Documents\#University_Files\6th semester\CS201\201-DataStructures-Exam-CPP-master\src\List\Graph\Edge.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\mokha\OneDrive\Documents\#University_Files\6th semester\CS201\201-DataStructures-Exam-CPP-master\src\List\Graph\EdgeList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\mokha\OneDrive\Documents\#University_Files\6th semester\CS201\201-DataStructures-Exam-CPP-master\src\List\DoublyLinkedList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\mokha\OneDrive\Documents\#University_Files\6th semester\CS201\201-DataStructures-Exam-CPP-master\src\List\DoublyNode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\mokha\OneDrive\Documents\#University_Files\6th semester\CS201\201-DataStructures-Exam-CPP-master\src\List\Hash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\mokha\OneDrive\Documents\#University_Files\6th semester\CS201\201-DataStructures-Exam-CPP-master\src\List\LinkedList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\mokha\OneDrive\Documents\#University_Files\6th semester\CS201\201-DataStructures-Exam-CPP-master\src\List\Node.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\mokha\OneDrive\Documents\#University_Files\6th semester\CS201\201-DataStructures-Exam-CPP-master\src\List\Queue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\mokha\OneDrive\Documents\#University_Files\6th semester\CS201\201-DataStructures-Exam-CPP-master\src\List\Stack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\mokha\OneDrive\Documents\#University_Files\6th semester\CS201\201-DataStructures-Exam-CPP-master\src\Tree\Queue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\mokha\OneDrive\Documents\#University_Files\6th semester\CS201\201-DataStructures-Exam-CPP-master\src\Tree\Stack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\mokha\OneDrive\Documents\#University_Files\6th semester\CS201\201-DataStructures-Exam-CPP-master\src\Tree\Element.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\mokha\OneDrive\Documents\#University_Files\6th semester\CS201\201-DataStructures-Exam-CPP-master\src\List\Graph\Graph.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\mokha\OneDrive\Documents\#University_Files\6th semester\CS201\201-DataStructures-Exam-CPP-master\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{6C053050-E9DE-39E8-9BE9-A90CB3B9A014}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{12664424-F1A5-3EAB-BC8A-0260E826B625}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,5 @@
+C:/Users/mokha/OneDrive/Documents/#University_Files/6th semester/CS201/201-DataStructures-Exam-CPP-master/cmake-build-debug/CMakeFiles/Exam_CPP.dir
+C:/Users/mokha/OneDrive/Documents/#University_Files/6th semester/CS201/201-DataStructures-Exam-CPP-master/cmake-build-debug/CMakeFiles/ExamTest1.dir
+C:/Users/mokha/OneDrive/Documents/#University_Files/6th semester/CS201/201-DataStructures-Exam-CPP-master/cmake-build-debug/CMakeFiles/ExamTest2.dir
+C:/Users/mokha/OneDrive/Documents/#University_Files/6th semester/CS201/201-DataStructures-Exam-CPP-master/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/mokha/OneDrive/Documents/#University_Files/6th semester/CS201/201-DataStructures-Exam-CPP-master/cmake-build-debug/CMakeFiles/rebuild_cache.dir

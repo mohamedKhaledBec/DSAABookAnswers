@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\mokha\OneDrive\Documents\#University_Files\6th semester\CS201\201-DataStructures-Exam-CPP-master\build\CMakeFiles\8179dae3b93ae3f46c95ece3d804da0d\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{F48D464B-18B2-335D-B175-52B4B9BF608F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
