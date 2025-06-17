@@ -118,4 +118,11 @@ int* DisjointSet::numberOfDescendants(int index) {
     }
     return array;
 }
+int* DisjointSet::numberOfDescendants(int index) {
+    int descendantsCount = 0;
+    int indexParent = findSetIterative(index);
+    for (int i = 0; i < this->count; i++) {
+        if ()
+    }
+}
 

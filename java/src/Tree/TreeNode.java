@@ -146,7 +146,7 @@ public class TreeNode {
             count+=left.leftistOrRightist();
         }
         if(right!=null){
-            count+=right.left.numberOfNonLeafNodes();
+            count+=right.numberOfNonLeafNodes();
         }
         return count;
     }

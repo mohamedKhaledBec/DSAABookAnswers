@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.23"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Exam_CPP",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ExamTest1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ExamTest1-Debug-2746c7baedff9c90cb85.json",
+					"name" : "ExamTest1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ExamTest2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ExamTest2-Debug-de5677adbeaee35a1d61.json",
+					"name" : "ExamTest2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Exam_CPP::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Exam_CPP-Debug-2228bdb2d142377087b8.json",
+					"name" : "Exam_CPP",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/mokha/OneDrive/Documents/#University_Files/6th semester/CS201/DSAABookAnswers/201-DataStructures-Exam-CPP-master/cmake-build-debug",
+		"source" : "C:/Users/mokha/OneDrive/Documents/#University_Files/6th semester/CS201/DSAABookAnswers/201-DataStructures-Exam-CPP-master"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
