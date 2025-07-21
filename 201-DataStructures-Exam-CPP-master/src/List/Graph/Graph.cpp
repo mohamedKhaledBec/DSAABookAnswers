@@ -44,7 +44,15 @@ namespace list {
         }
     }
 
-    void Graph::breadthFirstSearch(bool *visited, int startNode) {
+    void Graph::breadthFirstSearch(bool *vis
+
+
+
+
+
+
+
+
         Edge* edge;
         int fromNode, toNode;
         Queue queue = Queue();
